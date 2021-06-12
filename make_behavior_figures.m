@@ -123,7 +123,7 @@ title(['total: ', num2str(mean(RL))])
 figure
 plot(XY_plot(:,1),XY_plot(:,2))
 xlim([-1300 1300])
-title('trajectory')
+title('Trajectory')
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%5
 
