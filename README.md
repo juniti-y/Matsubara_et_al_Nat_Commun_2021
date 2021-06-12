@@ -3,7 +3,7 @@
 ## 1. Simulation for the light amplitude in the brain.
 just run Xray_simulation in MATLAB.
 
-requirement: Image Processing Toolbox?
+requirement: Image Processing Toolbox
 
 ## 2. Analysis of the behaviral data.
 run make_behavior_figures(filename) in MATLAB.
