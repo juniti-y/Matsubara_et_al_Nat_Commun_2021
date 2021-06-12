@@ -3,7 +3,7 @@ close all
 
 
 %the value was adjusted so that the amplitude at the surface of the ball was  2.1 uW.cm2.
-Amp=2.1/1.6681e+03% uW/cm2
+Amp=2.1/1.6681e+03;% uW/cm2
 
 %amplitude was 67.25% at 200 um
 tau=100.8; %assume 1 pixel = 5 um
@@ -43,6 +43,7 @@ for x=1:size(Ball_powder,1)
 	end
 end
 Ball_light=imfilter(Ball_powder, EDfilter);
+title('Distribution of power')
 
 figure
 hold on
@@ -56,7 +57,6 @@ yticks(0:80:400)
 yticklabels(-1000:400:1000)
 ylabel('um')
 colorbar
-print(gcf,'-depsc','-r300',[FN_dir,'Ball_powder.eps'])
 
 
 figure
@@ -71,4 +71,4 @@ yticks(0:80:400)
 yticklabels(-1000:400:1000)
 ylabel('um')
 colorbar
-print(gcf,'-depsc','-r300',[FN_dir,'Ball_light.eps'])
+title('Distribution of light amplitude')
